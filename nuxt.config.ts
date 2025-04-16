@@ -7,5 +7,10 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
     assetsInclude: ["**/public/**/*"],
+    resolve: {
+      alias: {
+        "@": "/",
+      },
+    },
   },
 });
